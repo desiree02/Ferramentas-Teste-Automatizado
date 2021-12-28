@@ -1,8 +1,8 @@
-**UFRRJ - Universidade Federal Rural do Rio de Janeiro
+**UFRRJ - Universidade Federal Rural do Rio de Janeiro**
 
-**Orientadores: Natalia Lessa e Fellipe Duarte
-**
-TCC: **Levantamento de Ferramentas de Apoio ao Teste Automatizado com 5W3H**
+**Orientadores: Natalia Lessa e Fellipe Duarte**
 
-**_Ferramentas utilizadas como exemplo: PHPUnit, Selenium e Watir.
+**TCC: Levantamento de Ferramentas de Apoio ao Teste Automatizado com 5W3H**
+
+**_Ferramentas utilizadas como exemplo: PHPUnit, Selenium e Watir._**
 
