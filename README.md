@@ -4,5 +4,5 @@
 
 **TCC: Levantamento de Ferramentas de Apoio ao Teste Automatizado com 5W3H**
 
-**_Ferramentas utilizadas como exemplo: PHPUnit, Selenium e Watir._
+**_Ferramentas utilizadas como exemplo: PHPUnit, Selenium e Watir._**
 
