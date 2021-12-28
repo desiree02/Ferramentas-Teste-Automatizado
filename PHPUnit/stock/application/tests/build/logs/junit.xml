@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="AlterProduct_test" file="C:\xampp\htdocs\stock\application\tests\controllers\AlterProduct_test.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.257646">
+    <testcase name="test_CT01" class="AlterProduct_test" classname="AlterProduct_test" file="C:\xampp\htdocs\stock\application\tests\controllers\AlterProduct_test.php" line="25" assertions="1" time="0.257646">
+      <system-out>Array
+(
+    [id] =&gt; 23
+    [name] =&gt; Mochila
+    [sku] =&gt; 12345
+    [price] =&gt; 30,00
+    [qty] =&gt; 2
+    [image] =&gt; &lt;p&gt;You did not select a file to upload.&lt;/p&gt;
+    [description] =&gt; &lt;p&gt;Bolsa&lt;/p&gt;
+    [attribute_value_id] =&gt; "null"
+    [brand_id] =&gt; "17"
+    [category_id] =&gt; "7"
+    [store_id] =&gt; 8
+    [availability] =&gt; 1
+)
+--------------Array
+(
+    [id] =&gt; 23
+    [name] =&gt; Mochila
+    [sku] =&gt; 12345
+    [price] =&gt; 30,00
+    [qty] =&gt; 2
+    [image] =&gt; &lt;p&gt;You did not select a file to upload.&lt;/p&gt;
+    [description] =&gt; &lt;p&gt;Bolsa&lt;/p&gt;
+    [attribute_value_id] =&gt; "null"
+    [brand_id] =&gt; "17"
+    [category_id] =&gt; "7"
+    [store_id] =&gt; 8
+    [availability] =&gt; 1
+)
+</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="18" assertions="16" errors="2" warnings="0" failures="8" skipped="0" time="1.219699">
+    <testsuite name="CodeIgniter Application Test Suite" tests="18" assertions="16" errors="2" warnings="0" failures="8" skipped="0" time="1.219699">
+      <testsuite name="Admin_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Admin_test.php" tests="2" assertions="0" errors="2" warnings="0" failures="0" skipped="0" time="0.222932">
+        <testcase name="test_CT01" class="Admin_test" classname="Admin_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Admin_test.php" line="13" assertions="0" time="0.131322">
+          <error type="Error">Admin_test::test_CT01
+Error: Call to a member function query() on null
+
+C:\xampp\htdocs\stock\application\models\Model_users.php:14
+C:\xampp\htdocs\stock\application\tests\controllers\Admin_test.php:38</error>
+        </testcase>
+        <testcase name="test_CT01_validation" class="Admin_test" classname="Admin_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Admin_test.php" line="50" assertions="0" time="0.091610">
+          <error type="Error">Admin_test::test_CT01_validation
+Error: Call to a member function query() on null
+
+C:\xampp\htdocs\stock\application\models\Model_users.php:14
+C:\xampp\htdocs\stock\application\tests\controllers\Admin_test.php:38
+C:\xampp\htdocs\stock\application\tests\controllers\Admin_test.php:52</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="AlterAdmin_test" file="C:\xampp\htdocs\stock\application\tests\controllers\AlterAdmin_test.php" tests="1" assertions="1" errors="0" warnings="0" failures="1" skipped="0" time="0.017638">
+        <testcase name="test_index" class="AlterAdmin_test" classname="AlterAdmin_test" file="C:\xampp\htdocs\stock\application\tests\controllers\AlterAdmin_test.php" line="5" assertions="1" time="0.017638">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">AlterAdmin_test::test_index
+URL to redirect is not Redirect to http://localhost/stock/users/setting but Redirect to http://localhost/stock/auth/login.
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'Redirect to http://localhost/stock/users/setting'
++'Redirect to http://localhost/stock/auth/login'
+
+C:\xampp\htdocs\stock\application\tests\_ci_phpunit_test\CIPHPUnitTestCase.php:437
+C:\xampp\htdocs\stock\application\tests\controllers\AlterAdmin_test.php:28</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" tests="10" assertions="10" errors="0" warnings="0" failures="4" skipped="0" time="0.724001">
+        <testcase name="test_CT01" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="13" assertions="1" time="0.150546">
+          <system-out>Array
+(
+    [id] =&gt; 1
+    [company_name] =&gt; Araujo Store
+    [service_charge_value] =&gt; 
+    [vat_charge_value] =&gt; 
+    [address] =&gt; RJ
+    [phone] =&gt; 
+    [country] =&gt; 
+    [message] =&gt; Loja de Bolsa
+    [currency] =&gt; 
+)
+Array
+(
+    [id] =&gt; 1
+    [company_name] =&gt; Araujo Store
+    [service_charge_value] =&gt; 
+    [vat_charge_value] =&gt; 
+    [address] =&gt; RJ
+    [phone] =&gt; 
+    [country] =&gt; 
+    [message] =&gt; Loja de Bolsa
+    [currency] =&gt; 
+)
+</system-out>
+        </testcase>
+        <testcase name="test_CT01_validation" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="49" assertions="1" time="0.009947"/>
+        <testcase name="test_CT02" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="74" assertions="1" time="0.125054">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Company_test::test_CT02
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     'id' =&gt; '1'
+     'company_name' =&gt; 'Araujo Store'
+-    'service_charge_value' =&gt; ''
+-    'vat_charge_value' =&gt; ''
++    'service_charge_value' =&gt; '13'
++    'vat_charge_value' =&gt; '2'
+     'address' =&gt; 'RJ'
+-    'phone' =&gt; ''
+-    'country' =&gt; ''
++    'phone' =&gt; '021'
++    'country' =&gt; 'Brasil'
+     'message' =&gt; 'Loja de Bolsa'
+-    'currency' =&gt; ''
++    'currency' =&gt; 'USD'
+ )
+
+C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php:105</failure>
+        </testcase>
+        <testcase name="test_CT02_validation" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="109" assertions="1" time="0.010555"/>
+        <testcase name="test_CT03" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="134" assertions="1" time="0.130676"/>
+        <testcase name="test_CT03_validation" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="169" assertions="1" time="0.010809">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Company_test::test_CT03_validation
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     'id' =&gt; '1'
+     'company_name' =&gt; 'Araujo Store'
+-    'service_charge_value' =&gt; '13'
+-    'vat_charge_value' =&gt; '2'
+-    'address' =&gt; 'RJ'
+-    'phone' =&gt; '021'
+-    'country' =&gt; 'Brasil'
++    'service_charge_value' =&gt; ''
++    'vat_charge_value' =&gt; ''
++    'address' =&gt; ''
++    'phone' =&gt; ''
++    'country' =&gt; ''
+     'message' =&gt; 'Loja de Bolsa'
+-    'currency' =&gt; 'USD'
++    'currency' =&gt; ''
+ )
+
+C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php:189</failure>
+        </testcase>
+        <testcase name="test_CT04" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="194" assertions="1" time="0.116346">
+          <system-out>Array
+(
+    [id] =&gt; 1
+    [company_name] =&gt; Araujo Store
+    [service_charge_value] =&gt; 13
+    [vat_charge_value] =&gt; 2
+    [address] =&gt; RJ
+    [phone] =&gt; 021
+    [country] =&gt; Brasil
+    [message] =&gt; Loja de Bolsa
+    [currency] =&gt; USD
+)
+Array
+(
+    [id] =&gt; 1
+    [company_name] =&gt; Araujo Store
+    [service_charge_value] =&gt; 13
+    [vat_charge_value] =&gt; 2
+    [address] =&gt; RJ
+    [phone] =&gt; 021
+    [country] =&gt; Brasil
+    [message] =&gt; Loja de Bolsa
+    [currency] =&gt; USD
+)
+</system-out>
+        </testcase>
+        <testcase name="test_CT04_validation" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="230" assertions="1" time="0.019914">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Company_test::test_CT04_validation
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     'id' =&gt; '1'
+     'company_name' =&gt; 'Araujo Store'
+-    'service_charge_value' =&gt; '13'
+-    'vat_charge_value' =&gt; '2'
+-    'address' =&gt; 'RJ'
+-    'phone' =&gt; '021'
+-    'country' =&gt; 'Brasil'
+-    'message' =&gt; 'Loja de Bolsa'
+-    'currency' =&gt; 'USD'
++    'service_charge_value' =&gt; ''
++    'vat_charge_value' =&gt; ''
++    'address' =&gt; ''
++    'phone' =&gt; ''
++    'country' =&gt; ''
++    'message' =&gt; ''
++    'currency' =&gt; ''
+ )
+
+C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php:250</failure>
+        </testcase>
+        <testcase name="test_CT05" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="256" assertions="1" time="0.134797">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Company_test::test_CT05
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     'id' =&gt; '1'
+-    'company_name' =&gt; 'Araujo Store'
++    'company_name' =&gt; 'UFRRJ'
+     'service_charge_value' =&gt; '13'
+     'vat_charge_value' =&gt; '2'
+     'address' =&gt; 'RJ'
+     'phone' =&gt; '021'
+     'country' =&gt; 'Brasil'
+-    'message' =&gt; 'Loja de Bolsa'
++    'message' =&gt; 'ola ruralinos'
+     'currency' =&gt; 'USD'
+ )
+
+C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php:287</failure>
+          <system-out>
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant service_charge_value - assumed 'service_charge_value' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 272
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 272
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant vat_charge_value - assumed 'vat_charge_value' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 273
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 273
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant phone - assumed 'phone' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 275
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 275
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant country - assumed 'country' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 276
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 276
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant currency - assumed 'currency' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 278
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 278
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+</system-out>
+        </testcase>
+        <testcase name="test_CT05_validation" class="Company_test" classname="Company_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php" line="292" assertions="1" time="0.015359">
+          <system-out>
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant service_charge_value - assumed 'service_charge_value' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 300
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 300
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05_validation
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant vat_charge_value - assumed 'vat_charge_value' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 301
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 301
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05_validation
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant phone - assumed 'phone' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 303
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 303
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05_validation
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant country - assumed 'country' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 304
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 304
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05_validation
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+
+A PHP Error was encountered
+
+Severity:    Warning
+Message:     Use of undefined constant currency - assumed 'currency' (this will throw an Error in a future version of PHP)
+Filename:    C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+Line Number: 306
+
+Backtrace:
+	File: C:\xampp\htdocs\stock\application\tests\controllers\Company_test.php
+	Line: 306
+	Function: _error_handler
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 1251
+	Function: test_CT05_validation
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 917
+	Function: runTest
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestResult.php
+	Line: 596
+	Function: runBare
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestCase.php
+	Line: 703
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/Framework/TestSuite.php
+	Line: 498
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/TestRunner.php
+	Line: 489
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 129
+	Function: run
+
+	File: phar://C:/xampp/php/phpunit.phar/phpunit/TextUI/Command.php
+	Line: 98
+	Function: run
+
+	File: C:\xampp\php\phpunit.phar
+	Line: 1076
+	Function: main
+
+
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="CreateGroup_test" file="C:\xampp\htdocs\stock\application\tests\controllers\CreateGroup_test.php" tests="1" assertions="1" errors="0" warnings="0" failures="1" skipped="0" time="0.116846">
+        <testcase name="test_CT01" class="CreateGroup_test" classname="CreateGroup_test" file="C:\xampp\htdocs\stock\application\tests\controllers\CreateGroup_test.php" line="14" assertions="1" time="0.116846">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">CreateGroup_test::test_CT01
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     'id' =&gt; '34'
+-    'group_name' =&gt; 'testandoNew1108'
+-    'permission' =&gt; 's:51:"a:2:{i:0;s:10:"createUser";i:1;s:11:"createGroup";}";'
++    'group_name' =&gt; 'testandoNew11108'
++    'permission' =&gt; 'a:2:{i:0;s:10:"createUser";i:1;s:11:"createGroup";}'
+ )
+
+C:\xampp\htdocs\stock\application\tests\controllers\CreateGroup_test.php:48</failure>
+          <system-out>Array
+(
+    [id] =&gt; 34
+    [group_name] =&gt; testandoNew1108
+    [permission] =&gt; s:51:"a:2:{i:0;s:10:"createUser";i:1;s:11:"createGroup";}";
+)
+Array
+(
+    [id] =&gt; 34
+    [group_name] =&gt; testandoNew11108
+    [permission] =&gt; a:2:{i:0;s:10:"createUser";i:1;s:11:"createGroup";}
+)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="CreateUser_test" file="C:\xampp\htdocs\stock\application\tests\controllers\CreateUser_test.php" tests="1" assertions="1" errors="0" warnings="0" failures="1" skipped="0" time="0.113892">
+        <testcase name="test_CT02" class="CreateUser_test" classname="CreateUser_test" file="C:\xampp\htdocs\stock\application\tests\controllers\CreateUser_test.php" line="95" assertions="1" time="0.113892">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">CreateUser_test::test_CT02
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+     'firstname' =&gt; 'Desiree'
+     'lastname' =&gt; ''
+     'phone' =&gt; ''
+-    'gender' =&gt; '0'
++    'gender' =&gt; ''
+ )
+
+C:\xampp\htdocs\stock\application\tests\controllers\CreateUser_test.php:140</failure>
+          <system-out>Array
+(
+    [id] =&gt; 24
+    [username] =&gt; desiree
+    [password] =&gt; desiree02
+    [email] =&gt; desiree@hotmail.com
+    [firstname] =&gt; Desiree
+    [lastname] =&gt; 
+    [phone] =&gt; 
+    [gender] =&gt; 0
+)
+</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="Welcome_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Welcome_test.php" tests="3" assertions="3" errors="0" warnings="0" failures="1" skipped="0" time="0.024389">
+        <testcase name="test_index" class="Welcome_test" classname="Welcome_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Welcome_test.php" line="13" assertions="1" time="0.012237">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Welcome_test::test_index
+Failed asserting that 'Welcome/index is not found' contains "&lt;title&gt;Welcome to CodeIgniter&lt;/title&gt;".
+
+C:\xampp\htdocs\stock\application\tests\controllers\Welcome_test.php:16</failure>
+        </testcase>
+        <testcase name="test_method_404" class="Welcome_test" classname="Welcome_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Welcome_test.php" line="19" assertions="1" time="0.009892"/>
+        <testcase name="test_APPPATH" class="Welcome_test" classname="Welcome_test" file="C:\xampp\htdocs\stock\application\tests\controllers\Welcome_test.php" line="25" assertions="1" time="0.002260"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
